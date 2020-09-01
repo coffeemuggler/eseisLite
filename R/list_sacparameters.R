@@ -11,8 +11,8 @@
 #' 
 #' @examples
 #' 
-#' ## show sac parameters
-#' list_sacparameters()
+#' print("Not included in Lite version")
+#'                      
 #'                      
 #' @export list_sacparameters
 list_sacparameters <- function(

@@ -26,14 +26,7 @@ This function plots a line graph of the spectrum of a seismic signal.
 }
 \examples{
 
-## load example data set
-data(rockfall)
-
-## calculate spectrum
-spectrum_rockfall <- signal_spectrum(data = rockfall_eseis)
-
-## plot data set with lower resolution
-plot_spectrum(data = spectrum_rockfall)
+print("Not included in Lite version")
 
 }
 \seealso{

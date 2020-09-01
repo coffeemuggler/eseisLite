@@ -70,14 +70,7 @@ LAT, LON, ELEVATION, NETWORK.
 }
 \examples{
 
-\dontrun{
-## load example data 
-data("rockfall")
-
-## write as sac file
-write_sac(data = rockfall_eseis)
-          
-}
+print("Not included in Lite version")
 
 }
 \author{

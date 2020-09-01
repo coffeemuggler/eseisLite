@@ -13,21 +13,8 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## load example data
-#' data(rockfall)
-#' 
-#' ## define limits to clip to
-#' limits <- c(min(rockfall_t) + 10,
-#'             max(rockfall_t) - 10)
-#' 
-#' ## clip data set
-#' rockfall_t_clip <- time_clip(time = rockfall_t, 
-#'                              limits = limits)
-#' 
-#' ## compare time ranges
-#' range(rockfall_t)
-#' range(rockfall_t_clip)
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export time_clip
 #' 
 time_clip <- function(
@@ -40,7 +27,7 @@ time_clip <- function(
     
     ## apply function to list
     data_out <- lapply(X = time, 
-                       FUN = eseis::time_clip,
+                       FUN = eseisLite::time_clip,
                        limits = limits)
     
     ## return output

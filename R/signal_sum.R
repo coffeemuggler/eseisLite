@@ -10,14 +10,8 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## create random vectors
-#' x <- runif(n = 1000, min = -1, max = 1)
-#' y <- runif(n = 1000, min = -1, max = 1)
-#' z <- runif(n = 1000, min = -1, max = 1)
-#' 
-#' ## calculate vector sums
-#' xyz <- signal_sum(x, y, z)
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_sum
 signal_sum <- function(
   ...

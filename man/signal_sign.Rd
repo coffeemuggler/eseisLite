@@ -19,11 +19,7 @@ values of a signal.
 }
 \examples{
 
-## load example data
-data(rockfall)
-
-## sign-cut signal
-rockfall_sign <- signal_sign(data = rockfall_eseis)
+print("Not included in Lite version")
 
 }
 \author{

@@ -23,17 +23,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## deconvolve signal
-#' rockfall_decon <- signal_deconvolve(data = rockfall_eseis)
-#'                                     
-#' ## integrate signal
-#' rockfall_int <- signal_integrate(data = rockfall_decon)
-#'                                  
-#' ## Note that usually the signal should be filtered prior to integration.
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_integrate
 signal_integrate <- function(
   data,
@@ -59,7 +50,7 @@ signal_integrate <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_integrate, 
+                       FUN = eseisLite::signal_integrate, 
                        dt = dt,
                        method = method)
     

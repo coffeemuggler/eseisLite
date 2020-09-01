@@ -34,7 +34,8 @@
 #' @examples
 #' 
 #' ## initiate eseis object
-#' aux_initiateeseis()
+#' 
+#' print("Not included in Lite version")
 #'                      
 #' @export aux_initiateeseis
 aux_initiateeseis <- function(

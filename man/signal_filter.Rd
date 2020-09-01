@@ -53,36 +53,8 @@ frequency domain.
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## filter data set by bandpass filter between 1 and 90 Hz
-rockfall_bp <- signal_filter(data = rockfall_eseis, 
-                             f = c(1, 90))
-                             
-## taper signal to account for edge effects
-rockfall_bp <- signal_taper(data = rockfall_bp, 
-                            n = 2000)
-
-## plot filtered signal
-plot_signal(data = rockfall_bp)
-
-## compare time domain versus frequency domain filtering
-rockfall_td <- signal_filter(data = rockfall_eseis, 
-                             f = c(10, 40), 
-                             fft = FALSE)
-                             
-rockfall_td_sp <- signal_spectrum(data = rockfall_td)
-
-rockfall_fd <- signal_filter(data = rockfall_eseis, 
-                             f = c(10, 40), 
-                             fft = TRUE)
-                             
-rockfall_fd_sp <- signal_spectrum(data = rockfall_fd)
-
-plot_spectrum(data = rockfall_td_sp)
-plot_spectrum(data = rockfall_fd_sp)
-                     
 }
 \author{
 Michael Dietze

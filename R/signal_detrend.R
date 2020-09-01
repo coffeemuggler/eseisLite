@@ -10,16 +10,8 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## remove linear trend from data set
-#' rockfall_detrend <- signal_detrend(data = rockfall_eseis)
-#' 
-#' ## compare data ranges
-#' range(rockfall_eseis$signal)
-#' range(rockfall_detrend$signal)
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_detrend
 signal_detrend <- function(
   data
@@ -30,7 +22,7 @@ signal_detrend <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_detrend)
+                       FUN = eseisLite::signal_detrend)
     
     ## return output
     return(data_out)

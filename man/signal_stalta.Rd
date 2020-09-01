@@ -37,26 +37,8 @@ long-term-average of the input signal.
 }
 \examples{
 
-## load example data
-data(rockfall)
+print("Not included in Lite version")
 
-## filter signal
-rockfall_f <- signal_filter(data = rockfall_eseis,
-                            f = c(1, 90), 
-                            p = 0.05)
-                    
-## calculate signal envelope
-rockfall_e <- signal_envelope(data = rockfall_f)
-
-## pick earthquake and rockfall event
-signal_stalta(data = rockfall_e,
-              sta = 100, 
-              lta = 18000, 
-              freeze = TRUE, 
-              on = 5, 
-              off = 3)
-              
-                     
 }
 \author{
 Michael Dietze

@@ -17,12 +17,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data
-#' data(rockfall)
-#' 
-#' ## cut signal
-#' rockfall_cut <- signal_cut(data = rockfall_eseis)
-#' 
+#' print("Not included in Lite version")
+#'
 #' @export signal_cut
 #' 
 signal_cut <- function(
@@ -35,7 +31,7 @@ signal_cut <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_cut,
+                       FUN = eseisLite::signal_cut,
                        k = k)
     
     ## return output

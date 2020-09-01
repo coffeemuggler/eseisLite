@@ -18,16 +18,8 @@ The function removes a linear trend from a signal vector.
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## remove linear trend from data set
-rockfall_detrend <- signal_detrend(data = rockfall_eseis)
-
-## compare data ranges
-range(rockfall_eseis$signal)
-range(rockfall_detrend$signal)
-                     
 }
 \author{
 Michael Dietze

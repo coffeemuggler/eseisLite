@@ -50,16 +50,7 @@ of the most likely source location of an event.
 }
 \examples{
 
-\dontrun{
-
-L <- spatial_amplitude(data = s_f, 
-coupling = c(1, 1, 1, 1),
-d_map = D_50$maps, 
-v = 900, 
-q = 100, 
-f = 7.5)
-
-}
+print("Not included in Lite version")
 
 }
 \author{

@@ -13,12 +13,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data
-#' data(rockfall)
-#' 
-#' ## calculate hilbert transform
-#' rockfall_h <- signal_hilbert(data = rockfall_eseis)
-#' 
+#' print("Not included in Lite version")
+#'
 #' @export signal_hilbert
 #' 
 signal_hilbert <- function(
@@ -30,7 +26,7 @@ signal_hilbert <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_hilbert)
+                       FUN = eseisLite::signal_hilbert)
     
     ## return output
     return(data_out)

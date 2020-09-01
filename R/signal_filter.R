@@ -39,36 +39,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## filter data set by bandpass filter between 1 and 90 Hz
-#' rockfall_bp <- signal_filter(data = rockfall_eseis, 
-#'                              f = c(1, 90))
-#'                              
-#' ## taper signal to account for edge effects
-#' rockfall_bp <- signal_taper(data = rockfall_bp, 
-#'                             n = 2000)
-#' 
-#' ## plot filtered signal
-#' plot_signal(data = rockfall_bp)
-#' 
-#' ## compare time domain versus frequency domain filtering
-#' rockfall_td <- signal_filter(data = rockfall_eseis, 
-#'                              f = c(10, 40), 
-#'                              fft = FALSE)
-#'                              
-#' rockfall_td_sp <- signal_spectrum(data = rockfall_td)
-#' 
-#' rockfall_fd <- signal_filter(data = rockfall_eseis, 
-#'                              f = c(10, 40), 
-#'                              fft = TRUE)
-#'                              
-#' rockfall_fd_sp <- signal_spectrum(data = rockfall_fd)
+#' print("Not included in Lite version")
 #'
-#' plot_spectrum(data = rockfall_td_sp)
-#' plot_spectrum(data = rockfall_fd_sp)
-#'                      
 #' @export signal_filter
 signal_filter <- function(
   data,
@@ -101,7 +73,7 @@ signal_filter <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_filter, 
+                       FUN = eseisLite::signal_filter, 
                        fft = fft,
                        dt = dt,
                        f = f,
@@ -202,7 +174,7 @@ signal_filter <- function(
         ## filter in frequency domain
         
         ## pad with zeros
-        data_pad <- eseis::signal_pad(data = data)
+        data_pad <- eseisLite::signal_pad(data = data)
         
         ## create frequency vector
         f_0 <- seq(from = 0, 
@@ -267,7 +239,7 @@ signal_filter <- function(
     ## optionally apply taper
     if(p > 0) {
       
-      data_out = eseis::signal_taper(data = data_out,
+      data_out = eseisLite::signal_taper(data = data_out,
                                      p = p)
     }
     

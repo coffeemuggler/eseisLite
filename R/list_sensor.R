@@ -14,8 +14,7 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## show sensors
-#' list_sensor()
+#' print("Not included in Lite version")
 #'                      
 #' @export list_sensor
 list_sensor <- function(

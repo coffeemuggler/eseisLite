@@ -19,19 +19,8 @@ The function removes the mean from a signal vector.
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## remove mean from data set
-rockfall_demean <- signal_demean(data = rockfall_eseis)
-
-## compare data ranges
-range(rockfall_eseis$signal)
-range(rockfall_demean$signal)
-
-## show mean of initial signal
-mean(rockfall_eseis$signal)
-                     
 }
 \author{
 Michael Dietze

@@ -15,18 +15,8 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## detrend data set
-#' rockfall_detrend <- signal_detrend(data = rockfall_eseis)
-#' 
-#' ## calculate envelope
-#' rockfall_envelope <- signal_envelope(data = rockfall_detrend)
-#' 
-#' ## plot envelope
-#' plot_signal(data = rockfall_envelope)
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_envelope
 signal_envelope <- function(
   data,
@@ -38,7 +28,7 @@ signal_envelope <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_envelope, 
+                       FUN = eseisLite::signal_envelope, 
                        p = p)
     
     ## return output

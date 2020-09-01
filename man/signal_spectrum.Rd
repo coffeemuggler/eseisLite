@@ -29,14 +29,7 @@ different approaches.
 }
 \examples{
 
-## load example data set
-data(rockfall)
-
-## calculate spectrum with standard setup
-s <- signal_spectrum(data = rockfall_eseis)
-
-## plot spectrum
-plot_spectrum(data = s)
+print("Not included in Lite version")
 
 }
 \author{

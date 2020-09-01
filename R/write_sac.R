@@ -48,15 +48,8 @@
 #' @author Michael Dietze
 #' 
 #' @examples
-#'
-#' \dontrun{
-#' ## load example data 
-#' data("rockfall")
 #' 
-#' ## write as sac file
-#' write_sac(data = rockfall_eseis)
-#'           
-#' }
+#' print("Not included in Lite version")
 #'
 #' @export write_sac
 #' 

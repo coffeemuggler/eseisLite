@@ -14,12 +14,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data
-#' data(rockfall)
-#' 
-#' ## sign-cut signal
-#' rockfall_sign <- signal_sign(data = rockfall_eseis)
-#' 
+#' print("Not included in Lite version")
+#'
 #' @export signal_sign
 #' 
 signal_sign <- function(
@@ -31,7 +27,7 @@ signal_sign <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_sign)
+                       FUN = eseisLite::signal_sign)
     
     ## return output
     return(data_out)

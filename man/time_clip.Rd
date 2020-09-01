@@ -20,21 +20,8 @@ The function clips a time vector based on provided limits.
 }
 \examples{
 
-## load example data
-data(rockfall)
+print("Not included in Lite version")
 
-## define limits to clip to
-limits <- c(min(rockfall_t) + 10,
-            max(rockfall_t) - 10)
-
-## clip data set
-rockfall_t_clip <- time_clip(time = rockfall_t, 
-                             limits = limits)
-
-## compare time ranges
-range(rockfall_t)
-range(rockfall_t_clip)
-                     
 }
 \author{
 Michael Dietze

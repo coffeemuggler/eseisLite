@@ -77,21 +77,7 @@ implemented as descibed on the IRIS website
 }
 \examples{
 
-\dontrun{
-## read one file
-file1 <- "~/Data/sac/EXMP01.14.213.01.00.00.BHE.SAC"
-
-sac1 <- read_sac(file = file1)
-
-## read two (or more files) without meta and header parts
-file2 <- c("~/Data/sac/EXMP01.14.213.01.00.00.BHE.SAC",
-           "~/Data/sac/EXMP01.14.213.02.00.00.BHE.SAC")
-
-sac2 <- read_sac(file = file2, 
-                 meta = FALSE, 
-                 header = FALSE,
-                 eseis = FALSE)
-}
+print("Not included in Lite version")
 
 }
 \author{

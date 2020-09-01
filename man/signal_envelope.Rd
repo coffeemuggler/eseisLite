@@ -23,18 +23,8 @@ should be detrended and/or the mean should be removed before processing.
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## detrend data set
-rockfall_detrend <- signal_detrend(data = rockfall_eseis)
-
-## calculate envelope
-rockfall_envelope <- signal_envelope(data = rockfall_detrend)
-
-## plot envelope
-plot_signal(data = rockfall_envelope)
-                     
 }
 \author{
 Michael Dietze

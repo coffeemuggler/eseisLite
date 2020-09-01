@@ -11,13 +11,13 @@ plot.eseis <- function(x, y, ...) {
        x$meta$type == "envelope" | 
        x$meta$type == "hilbert") {
       
-      eseis::plot_signal(x, ...)
+      eseisLite::plot_signal(x, ...)
     } else if(x$meta$type == "spectrum") {
       
-      eseis::plot_spectrum(x, ...)
+      eseisLite::plot_spectrum(x, ...)
     } else if(x$meta$type == "spectrogram") {
       
-      eseis::plot_spectrogram(x, ...)
+      eseisLite::plot_spectrogram(x, ...)
     } else {
       
       graphics::plot(x, ...)

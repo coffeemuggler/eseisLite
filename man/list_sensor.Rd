@@ -22,8 +22,7 @@ the sensor.
 }
 \examples{
 
-## show sensors
-list_sensor()
+print("Not included in Lite version")
                      
 }
 \author{

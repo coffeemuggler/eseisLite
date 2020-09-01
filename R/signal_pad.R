@@ -15,16 +15,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## pad with zeros
-#' rockfall_pad <- signal_pad(data = rockfall_eseis)
-#' 
-#' ## compare lengths
-#' rockfall_eseis$meta$n
-#' rockfall_pad$meta$n
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_pad
 signal_pad <- function(
   
@@ -36,7 +28,7 @@ signal_pad <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_pad)
+                       FUN = eseisLite::signal_pad)
     
     ## return output
     return(data_out)

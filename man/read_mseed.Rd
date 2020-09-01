@@ -60,20 +60,7 @@ package \code{IRISSeismic}.
 }
 \examples{
 
-\dontrun{
-## read mseed file with default options
-x <- read_mseed(file = "input.miniseed")
-
-## read mseed file, only signal trace, not as eseis object
-x <- read_mseed(file = "input.miniseed", 
-                time = FALSE, 
-                meta = FALSE, 
-                header = FALSE, 
-                eseis = FALSE)
-                
-## read more than one mseed files and append traces
-x <- read_mseed(file = c("input_1.miniseed", "input_2.miniseed"))
-}
+print("Not included in Lite version")
 
 }
 \author{

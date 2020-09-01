@@ -21,19 +21,7 @@ The time series \code{x} is aggregated by an integer factor \code{n}.
 }
 \examples{
 
-## load example data set
-data(rockfall)
-
-## aggregate time series
-rockfall_t_agg <- time_aggregate(data = rockfall_t, 
-                          n = 2)
-
-## compare results
-range(rockfall_t)
-diff(rockfall_t)
-
-range(rockfall_t_agg)
-diff(rockfall_t_agg)
+print("Not included in Lite version")
 
 }
 \author{

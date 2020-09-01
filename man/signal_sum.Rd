@@ -18,14 +18,8 @@ The function calculates the vector sum of the input signals.
 }
 \examples{
 
-## create random vectors
-x <- runif(n = 1000, min = -1, max = 1)
-y <- runif(n = 1000, min = -1, max = 1)
-z <- runif(n = 1000, min = -1, max = 1)
+print("Not included in Lite version")
 
-## calculate vector sums
-xyz <- signal_sum(x, y, z)
-                     
 }
 \author{
 Michael Dietze

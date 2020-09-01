@@ -41,7 +41,8 @@ of this package (with a few exceptions, mainly from the aux_... category).
 \examples{
 
 ## initiate eseis object
-aux_initiateeseis()
+
+print("Not included in Lite version")
                      
 }
 \author{

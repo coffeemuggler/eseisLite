@@ -11,19 +11,8 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## remove mean from data set
-#' rockfall_demean <- signal_demean(data = rockfall_eseis)
-#' 
-#' ## compare data ranges
-#' range(rockfall_eseis$signal)
-#' range(rockfall_demean$signal)
-#' 
-#' ## show mean of initial signal
-#' mean(rockfall_eseis$signal)
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_demean
 signal_demean <- function(
   data
@@ -34,7 +23,7 @@ signal_demean <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_demean)
+                       FUN = eseisLite::signal_demean)
     
     ## return output
     return(data_out)

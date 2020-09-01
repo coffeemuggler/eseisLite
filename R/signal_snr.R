@@ -15,17 +15,8 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## calculate snr with detrend option off and on
-#' snr <- signal_snr(data = rockfall_eseis)
-#' print(snr$snr)
-#' 
-#' snr <- signal_snr(data = rockfall_eseis, 
-#'                   detrend = TRUE)
-#' print(snr$snr)
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_snr
 signal_snr <- function(
   data,
@@ -37,7 +28,7 @@ signal_snr <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_snr, 
+                       FUN = eseisLite::signal_snr, 
                        detrend = detrend)
     
     ## return output

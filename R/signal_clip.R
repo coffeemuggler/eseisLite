@@ -19,21 +19,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data
-#' data(rockfall)
-#' 
-#' ## define limits (second 10 to 20 of the signal)
-#' limits <- c(rockfall_t[1] + 10, rockfall_t[1] + 20)
-#' 
-#' ## clip signal 
-#' rockfall_clip <- signal_clip(data = rockfall_z, 
-#'                              time = rockfall_t, 
-#'                              limits = limits)
-#'                      
-#' ## clip signal using the eseis object
-#' rockfall_clip <- signal_clip(data = rockfall_eseis, 
-#'                              limits = limits)
-#'                              
+#' print("Not included in Lite version")
+#'
 #' @export signal_clip
 signal_clip <- function(
   data,
@@ -52,7 +39,7 @@ signal_clip <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_clip,
+                       FUN = eseisLite::signal_clip,
                        time = time,
                        limits = limits)
     

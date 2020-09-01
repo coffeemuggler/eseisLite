@@ -13,21 +13,8 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## create example source location likelihood raster
-#' x <- raster::raster(nrows = 10, 
-#'                     ncols = 10, 
-#'                     xmn = 0, 
-#'                     xmx = 10, 
-#'                     ymn = 0, 
-#'                     ymx = 10)
-#' raster::values(x) <- runif(n = 100)
-#' 
-#' ## identify location of highest likelihood
-#' p_max <- spatial_pmax(data = x)
-#' 
-#' ## show result
-#' print(p_max)
-#' 
+#' print("Not included in Lite version")
+#'
 #' @export spatial_pmax
 spatial_pmax <- function(
   data

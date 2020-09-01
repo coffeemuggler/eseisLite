@@ -25,22 +25,8 @@ given proportion or a discrete number of samples.
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## remove mean from data set
-rockfall <- signal_demean(data = rockfall_eseis)
-
-## create artefact at the beginning
-rockfall_eseis$signal[1:100] <- runif(n = 100, min = -5000, max = 5000)
-
-## taper signal
-rockfall_taper <- signal_taper(data = rockfall, n = 1000)
-
-## plot both data sets
-plot_signal(data = rockfall_eseis)
-plot_signal(rockfall_taper)
-                     
 }
 \author{
 Michael Dietze

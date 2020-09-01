@@ -45,32 +45,8 @@ power data, using \code{caTools::runmean()} with the
 \code{endrule = "NA"}. After smoothing the data is re-linearised.
 }
 \examples{
-## load example data set
-data(earthquake)
 
-## ATTENTION, THIS EXAMPLE DATA SET IS FAR FROM IDEAL FOR THIS PURPOSE
-
-## detrend data
-s <- signal_detrend(data = s)
-
-## calculate h-v-ratio, will be very rugged
-hv <- signal_hvratio(data = s, 
-                     dt = 1 / 200)
-plot(hv$ratio, 
-     type = "l", 
-     log = "y")
-
-## calculate h-v-ratio using the autogressive spectrum method
-hv <- signal_hvratio(data = s, 
-                     dt = 1 / 200, 
-                     method = "autoregressive")
-plot(hv, type = "l")
-
-## calculate h-v-ratio with a smoothing window equivalent to dt
-hv <- signal_hvratio(data = s, 
-                     dt = 1 / 200,
-                     kernel = 200)
-plot(hv, type = "l")
+print("Not included in Lite version")
 
 }
 \author{

@@ -20,22 +20,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## remove mean from data set
-#' rockfall <- signal_demean(data = rockfall_eseis)
-#' 
-#' ## create artefact at the beginning
-#' rockfall_eseis$signal[1:100] <- runif(n = 100, min = -5000, max = 5000)
-#' 
-#' ## taper signal
-#' rockfall_taper <- signal_taper(data = rockfall, n = 1000)
-#' 
-#' ## plot both data sets
-#' plot_signal(data = rockfall_eseis)
-#' plot_signal(rockfall_taper)
-#'                      
+#' print("Not included in Lite version")
+#'
 #' @export signal_taper
 signal_taper <- function(
   data,
@@ -54,7 +40,7 @@ signal_taper <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_taper, 
+                       FUN = eseisLite::signal_taper, 
                        p = p,
                        n = n)
     

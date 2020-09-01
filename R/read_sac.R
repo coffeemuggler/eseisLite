@@ -56,22 +56,8 @@
 #' @author Michael Dietze
 #' 
 #' @examples
-#'
-#' \dontrun{
-#' ## read one file
-#' file1 <- "~/Data/sac/EXMP01.14.213.01.00.00.BHE.SAC"
 #' 
-#' sac1 <- read_sac(file = file1)
-#' 
-#' ## read two (or more files) without meta and header parts
-#' file2 <- c("~/Data/sac/EXMP01.14.213.01.00.00.BHE.SAC",
-#'            "~/Data/sac/EXMP01.14.213.02.00.00.BHE.SAC")
-#' 
-#' sac2 <- read_sac(file = file2, 
-#'                  meta = FALSE, 
-#'                  header = FALSE,
-#'                  eseis = FALSE)
-#' }
+#' print("Not included in Lite version")
 #'
 #' @export read_sac
 read_sac <- function(
@@ -164,7 +150,7 @@ read_sac <- function(
     
     data_list <- lapply(X = 1:length(file), 
                         FUN = function(X) {
-                          eseis::aux_initiateeseis()
+                          eseisLite::aux_initiateeseis()
                         })
   } else {
     
@@ -213,7 +199,7 @@ read_sac <- function(
                                yes = NA, 
                                no = location_station)
     
-    time_JD <- eseis::time_convert(input = as.numeric(header[72]),
+    time_JD <- eseisLite::time_convert(input = as.numeric(header[72]),
                                    output = "yyyy-mm-dd", 
                                    year = as.numeric(header[71]))
     time_hour <- ifelse(test = nchar(header[73]) == 1, 

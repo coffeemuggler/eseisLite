@@ -18,11 +18,7 @@ The value AD is the analogue-digital conversion factor.
 }
 \examples{
 
-## show documented loggers
-list_logger()
-
-## show names of loggers in list
-names(list_logger())
+print("Not included in Lite version")
                      
 }
 \author{

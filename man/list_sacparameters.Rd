@@ -15,8 +15,8 @@ may be used for advanced modifications by the user.
 }
 \examples{
 
-## show sac parameters
-list_sacparameters()
+print("Not included in Lite version")
+                     
                      
 }
 \author{

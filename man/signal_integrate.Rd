@@ -28,17 +28,8 @@ displacement. Two methods are available
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## deconvolve signal
-rockfall_decon <- signal_deconvolve(data = rockfall_eseis)
-                                    
-## integrate signal
-rockfall_int <- signal_integrate(data = rockfall_decon)
-                                 
-## Note that usually the signal should be filtered prior to integration.
-                     
 }
 \author{
 Michael Dietze

@@ -22,11 +22,7 @@ defined threshold set by k times the standard deviation of the signal.
 }
 \examples{
 
-## load example data
-data(rockfall)
-
-## cut signal
-rockfall_cut <- signal_cut(data = rockfall_eseis)
+print("Not included in Lite version")
 
 }
 \author{

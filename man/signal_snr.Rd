@@ -22,17 +22,8 @@ vector as the ratio between mean and max.
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## calculate snr with detrend option off and on
-snr <- signal_snr(data = rockfall_eseis)
-print(snr$snr)
-
-snr <- signal_snr(data = rockfall_eseis, 
-                  detrend = TRUE)
-print(snr$snr)
-                     
 }
 \author{
 Michael Dietze

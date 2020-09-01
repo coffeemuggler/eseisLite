@@ -20,16 +20,8 @@ corresponding to the next higher power of two.
 }
 \examples{
 
-## load example data set
-data(rockfall)
+print("Not included in Lite version")
 
-## pad with zeros
-rockfall_pad <- signal_pad(data = rockfall_eseis)
-
-## compare lengths
-rockfall_eseis$meta$n
-rockfall_pad$meta$n
-                     
 }
 \author{
 Michael Dietze

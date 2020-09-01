@@ -22,16 +22,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data set
-#' data("rockfall")
-#' 
-#' ## whiten data set between 10 and 30 Hz
-#' rockfall_2 <- signal_whiten(data = rockfall_eseis, 
-#'                             f = c(10, 30))
-#'                             
-#' ## plot whitened data set
-#' plot(rockfall_2)
-#' 
+#' print("Not included in Lite version")
+#'
 #' @export signal_whiten
 #' 
 signal_whiten <- function(
@@ -66,7 +58,7 @@ signal_whiten <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::signal_whiten,
+                       FUN = eseisLite::signal_whiten,
                        dt = dt,
                        f = f)
     

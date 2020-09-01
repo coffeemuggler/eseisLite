@@ -23,15 +23,8 @@
 #' 
 #' @examples
 #' 
-#' ## load example data set
-#' data(rockfall)
-#' 
-#' ## calculate spectrum
-#' spectrum_rockfall <- signal_spectrum(data = rockfall_eseis)
-#' 
-#' ## plot data set with lower resolution
-#' plot_spectrum(data = spectrum_rockfall)
-#' 
+#' print("Not included in Lite version")
+#'
 #' @export plot_spectrum
 #' 
 plot_spectrum <- function(
@@ -47,7 +40,7 @@ plot_spectrum <- function(
     
     ## apply function to list
     data_out <- lapply(X = data, 
-                       FUN = eseis::plot_spectrum,
+                       FUN = eseisLite::plot_spectrum,
                        unit = unit,
                        n = n)
     

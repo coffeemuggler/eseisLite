@@ -10,11 +10,7 @@
 #' @keywords eseis
 #' @examples
 #' 
-#' ## show documented loggers
-#' list_logger()
-#' 
-#' ## show names of loggers in list
-#' names(list_logger())
+#' print("Not included in Lite version")
 #'                      
 #' @export list_logger
 list_logger <- function(
